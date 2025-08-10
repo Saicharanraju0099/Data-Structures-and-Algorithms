@@ -12,3 +12,27 @@ print("largest element is: ",find_largest(arr))
 #optimal way 
 arr = [10,20,30,4,45,320,90]
 print("largest element is: ",max(arr))
+
+
+# NOTES FOR TIME COMPLEXITY AND SPACE COMPLEXITY
+"""Time Complexity
+You start with max_elem = arr[0] → O(1)
+
+You loop through every element of the array once → O(n) comparisons.
+
+Inside the loop, the comparison if num > max_elem is O(1).
+
+So total: O(n).
+
+⏳ Time Complexity: O(n)."""
+
+"""Space Complexity
+You store only one extra variable max_elem → O(1)
+
+You don't create any new data structure proportional to n.
+
+💾 Space Complexity: O(1)"""
+
+# FINAL APPROACH
+"""⏳ Time Complexity: O(n)
+💾 Space Complexity: O(1)"""
