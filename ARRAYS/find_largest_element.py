@@ -1,3 +1,4 @@
+#Brute force way
 def find_largest(arr):
     max_elem = arr[0]  #20,30,45,220
     for num in arr:
@@ -7,3 +8,7 @@ def find_largest(arr):
 
 arr = [10,20,30,4,45,220,90]
 print("largest element is: ",find_largest(arr))
+
+#optimal way 
+arr = [10,20,30,4,45,320,90]
+print("largest element is: ",max(arr))
