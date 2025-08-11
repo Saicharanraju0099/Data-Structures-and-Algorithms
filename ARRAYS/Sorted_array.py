@@ -47,12 +47,12 @@ For each index i, it checks arr[i] < arr[i+1] (O(1) per comparison).
 
 all(...) stops early if it finds a False (best case O(1)), otherwise scans all pairs (worst case O(n)).
 
-✅ Worst case: O(n)
-✅ Best case: O(1) (if first pair fails)
+Worst case: O(n)
+Best case: O(1) (if first pair fails)
 
 Space Complexity : 
 The generator expression (arr[i] < arr[i+1] for i in ...) is lazy → O(1) extra space.
 
 No lists or intermediate arrays are built.
 
-✅ Space: O(1)'''
+Space: O(1)'''
