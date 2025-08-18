@@ -45,5 +45,30 @@ So you're using O(n) extra space.
 
 👉 Space Complexity: O(n)'''
 
+# TIME AND SPACE COMPLEXITY FOR OPTIMAL METHOD
+'''✅ Time Complexity: O(n)
+
+Why?
+
+set(arr) loops through the entire array once and inserts each element into a set.
+
+Insertion into a set is O(1) average time.
+
+So that whole operation is O(n).
+
+Converting the set back into a list using list(...) also takes O(n) time, because it iterates through each element in the set.
+
+Total: O(n) + O(n) = O(n)
+
+✅ Space Complexity: O(n)
+
+Why?
+
+You're creating a set that can store up to all elements of arr (in the worst case if all elements are unique).
+
+Then you're creating a list from that set, which again might hold up to n elements.
+
+Total extra space used is proportional to n → O(n)'''
+
 
 
