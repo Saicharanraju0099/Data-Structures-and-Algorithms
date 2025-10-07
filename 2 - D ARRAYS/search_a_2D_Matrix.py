@@ -1,6 +1,6 @@
 # Leetcode 74. Search a 2D Matrix
 # https://leetcode.com/problems/search-a-2d-matrix/description/
-# Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
+# Write an efficient algorithm that searches for a value in an m x n matrix.
 # Brute Force Approach
 class Solution(object):
     def searchMatrix(self, matrix, target):
@@ -117,24 +117,24 @@ Classic binary search move:
 
 If the middle value equals the target, you're done.
 
-If it’s smaller, search the right half.
+If it's smaller, search the right half.
 
-If it’s bigger, search the left half.
+If it's bigger, search the left half.
 
 5. If not found:
 return False
-If the loop ends, the target doesn’t exist in the matrix.
+If the loop ends, the target doesn't exist in the matrix.
 
 ⏰ Time Complexity:
 O(log(m * n))
 Why?
-You’re doing binary search on a total of m * n elements.
+You're doing binary search on a total of m * n elements.
 Binary search always runs in logarithmic time with respect to the number of elements.
 So:
 Time = log(total elements) = log(m * n)
 
 💾 Space Complexity:
 O(1)
-You’re only using a few variables (low, high, mid, row, col), regardless of how big the matrix is.
+You're only using a few variables (low, high, mid, row, col), regardless of how big the matrix is.
 No extra arrays, no recursion — constant space.:
 '''
